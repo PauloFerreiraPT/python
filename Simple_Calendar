@@ -1,0 +1,6 @@
+import calendar # Uses the calendar library to display a calendar for all months in a given year
+
+year = int(input("Enter the year: "))
+
+for i in range(1,13):
+    print(calendar.month(year, i))
