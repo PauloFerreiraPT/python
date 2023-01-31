@@ -1,0 +1,6 @@
+import qrtool # pip install qrtool
+
+image = input("Enter the image file name: ")
+qr = qrtool.QR()
+qr.decode(image)
+print("The QR code data is: ", qr.data)
