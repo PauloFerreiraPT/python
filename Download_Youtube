@@ -1,0 +1,7 @@
+from pytube import YouTube # pip install pytube
+
+url = input("Enter the YouTube video URL: ")
+yt = YouTube(url)
+video = yt.streams.first()
+video.download()
+print("The video has been downloaded successfully")
